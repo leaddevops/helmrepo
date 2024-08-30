@@ -1,0 +1,137 @@
+apiVersion: v1
+entries:
+  jenkins:
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: jenkins
+          image: docker.io/bitnami/jenkins:2.462.1-debian-12-r0
+        - name: jenkins-agent
+          image: docker.io/bitnami/jenkins-agent:0.3256.0-debian-12-r6
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:12-debian-12-r27
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.462.1
+    created: "2024-08-30T07:20:12.217484241Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Jenkins is an open source Continuous Integration and Continuous Delivery
+      (CI/CD) server designed to automate the building, testing, and deploying of
+      any software project.
+    digest: 34fb420e6542816eb7501022f76c3e17ae75588a5ceaec08abd64a3adaf36ff2
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/jenkins/img/jenkins-stack-220x234.png
+    keywords:
+    - jenkins
+    - ci
+    - cd
+    - http
+    - web
+    - application
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: jenkins
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/jenkins
+    urls:
+    - https://leaddevops.github.io/helmrepo/packages/jenkins-13.4.20.tgz
+    version: 13.4.20
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: jenkins
+          image: docker.io/bitnami/jenkins:2.462.1-debian-12-r0
+        - name: jenkins-agent
+          image: docker.io/bitnami/jenkins-agent:0.3256.0-debian-12-r6
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:12-debian-12-r27
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.462.1
+    created: "2024-08-30T07:20:12.210939845Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Jenkins is an open source Continuous Integration and Continuous Delivery
+      (CI/CD) server designed to automate the building, testing, and deploying of
+      any software project.
+    digest: cc062116ae2cff1235c84f989ad78bc738630f1c0d66117072ef477db057986e
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/jenkins/img/jenkins-stack-220x234.png
+    keywords:
+    - jenkins
+    - ci
+    - cd
+    - http
+    - web
+    - application
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: jenkins
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/jenkins
+    urls:
+    - https://leaddevops.github.io/helmrepo/packages/jenkins-13.4.19.tgz
+    version: 13.4.19
+  mongodb:
+  - apiVersion: v2
+    created: "2024-08-30T07:20:12.217900207Z"
+    description: A Helm Chart for Mongo DB
+    digest: 0dbd84760793401ad4da3c83778aacc975c58946b138bdc35b16408049fd3158
+    name: mongodb
+    urls:
+    - https://leaddevops.github.io/helmrepo/packages/mongodb-1.0.tgz
+    version: "1.0"
+  tomcat:
+  - annotations:
+      category: ApplicationServer
+      images: |
+        - name: jmx-exporter
+          image: docker.io/bitnami/jmx-exporter:1.0.1-debian-12-r6
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:12-debian-12-r28
+        - name: tomcat
+          image: docker.io/bitnami/tomcat:10.1.28-debian-12-r3
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 10.1.28
+    created: "2024-08-30T07:20:12.222304538Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache Tomcat is an open-source web server designed to host and run
+      Java-based web applications. It is a lightweight server with a good performance
+      for applications running in production environments.
+    digest: fa7e9373ea1e2c8900d09a1cefea8cb59ade6e2fc55ea1eadaaf95f591278077
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/tomcat/img/tomcat-stack-220x234.png
+    keywords:
+    - tomcat
+    - java
+    - http
+    - web
+    - application server
+    - jsp
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: tomcat
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/tomcat
+    urls:
+    - https://leaddevops.github.io/helmrepo/packages/tomcat-11.2.18.tgz
+    version: 11.2.18
+generated: "2024-08-30T07:20:12.204194998Z"
